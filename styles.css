@@ -1,0 +1,606 @@
+/* 
+
+Primary Colors:
+Gold: #FFD700 (RGB: 255, 215, 0)
+
+Hashtags:
+#GoldTheme #LuxuryLook #GoldenReels #GoldRGB2552150
+Black: #000000 (RGB: 0, 0, 0)
+
+Hashtags:
+#BlackElegance #DarkMode #LuxuryBlack #BlackRGB000
+Red: #FF4500 (RGB: 255, 69, 0)
+
+Hashtags:
+#VividRed #CasinoPassion #FieryRed #RedRGB255690
+Accent Colors:
+White: #FFFFFF (RGB: 255, 255, 255)
+
+Hashtags:
+#WhiteAccent #CleanDesign #BrightStyle #WhiteRGB255255255
+Dark Blue: #00008B (RGB: 0, 0, 139)
+
+Hashtags:
+#RoyalBlue #DeepBlueStyle #LuxuryBlue #BlueRGB0000139
+Shimmering Gradients (Gold to Red):
+Gradient 1: Gold to Red (linear-gradient(90deg, #FFD700 0%, #FF4500 100%))
+
+Hashtags:
+#GoldenRedGradient #ShimmerEffect #GradientRGBGoldRed
+Gradient 2: Gold to Black (linear-gradient(90deg, #FFD700 0%, #000000 100%))
+
+Hashtags:
+#GoldBlackGradient #RoyalEffect #GradientRGBGoldBlack
+Gradient 3: Dark Blue to Gold (linear-gradient(90deg, #00008B 0%, #FFD700 100%))
+
+Hashtags:
+#BlueGoldGradient #RichStyle #GradientRGBBlueGold
+
+
+
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: ' Montserrat ', sans-serif;
+    max-width: 1200px;
+    background-color: #010103;
+    color: azure;
+    margin: 0 auto;    
+}
+
+h2 {
+    font-family: Cinzel, sans-serif;
+    color: red;
+}
+
+h3 {
+    font-family: Cinzel, sans-serif;
+    color: red;
+}
+
+.hero { 
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Pilna ekrāna augstums */
+        background: linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0.2), /* Caurspīdīgs melns augšā */
+            rgba(0, 0, 0, 0.8) /* Pilnībā melns apakšā */
+          ),
+          url(./assets/hero.jpg.jpg); /* Aizvietojiet ar savu bildes ceļu */
+        background-position: center; /* Centrē attēlu */
+        background-repeat: no-repeat; /* Attēls neatkārtojas */
+        object-fit: cover;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-left h1 {
+    font-family: Cinzel, sans-serif;
+    font-size: 44px;
+    color: #FFD700;
+    text-align: center;
+    max-width: 55%;
+    min-width: 400px;
+    margin-top: 3em;
+    margin-bottom:1em;
+    line-height: 45px;
+    padding-top: 2em;
+}
+
+
+
+.golden-btn {
+    background-color: #FF4500;
+    border: none;
+    color: #1C1C1C;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: shimmer 2s infinite;
+  }
+
+                     /*------------ HERO ENDS ---------------*/
+                                  /*------------ PAGE 2 STARTS ---------------*/
+
+.page2 {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 2em auto;
+}
+
+
+.left-col img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.right-col {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-right: 1em;
+}
+
+.right-col h2 {
+    /* color: rgb(0 ,  0, 139); */
+    color: #FF4500;
+    font-family: Cinzel, sans-serif;
+}
+
+p {
+    letter-spacing: 1px;
+    color: #888888;
+    padding-left: 5px;
+    text-align: justify;
+}
+  
+  @keyframes shimmer {
+    0% { box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3); }
+    50% { box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.6); }
+    100% { box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3); }
+  }
+
+/* 
+Tumšie akcenti: #1C1C1C (dziļi melns) vai #B22222 (tumši sarkans).
+Primārais: #FFD700 (zelta)
+Sekundārais: #FFC107 (mīksts zelts)
+*/
+
+
+
+
+
+
+
+                     /* NAV BAR STARTS */
+/* Pamata stils */
+
+   /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=0f0e0b&c2=444001&gt=r&gd=dbb
+*/
+
+
+/* -------------NAV BAR START HERE -------------- */
+
+/* Navigācijas josla */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2); /* Miglains caurspīdīgs fons */
+    backdrop-filter: blur(8px); /* Miglainā efekta pievienošana */
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2); /* Zeltains apakšējais rāmis */
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-family: Cinzel, sans-serif;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700; /* Zelta krāsa */
+    text-decoration: none;
+    
+}
+
+/* Navigācijas saites */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #FFD700; /* Zelta krāsa */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    background-color: #FF4500; /* Sarkanais akcents */
+    color: #000; /* Melns teksts */
+}
+
+/* Hamburger izvēlne */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #FFD700; /* Zelta svītras */
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.vip-bonuses {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    p{
+        padding-top: 20px;
+    }
+}
+
+/* ------------------------------------CASINO CARDS START */
+.vipcon {
+    display: flex;
+    padding: 1em 1em;
+    justify-content: center;
+}
+/* background: linear-gradient(90deg, #FF4500 0%, #1a1a1a 100%); */
+
+.casino-card1 {
+    background: #121212;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style:inherit;
+    cursor: pointer;
+    position: relative;
+    /* border-left:2px solid #FFD700; */
+    margin: 2em 1em;
+    min-width: 300px;
+  }
+  
+  .casino-card1:hover {
+    transform: rotateY(10deg) translateZ(20px);
+    box-shadow: -5px 5px 15px rgba(244, 208, 1, 0.481);
+  }
+  
+  .casino-logo1 {
+    width: 120px;
+    height: 120px;
+    background: rgb(78, 68, 68);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border: 2px solid black;
+  }
+  
+  .casino-card1 h3 {
+    color: red;
+    font-family: Cinzel, sans-serif;
+}
+
+
+  .casino-rating1 {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: .2em 0;
+  }
+  
+  .bonus-tag1 {
+    color: #FFD700;
+    font-weight: bold;
+    border-radius: 1px;
+    display: inline-block;
+    margin: rem 0;
+    font-family: Cinzel, sans-serif;
+  }
+  
+.casino-card1 p {
+    color: rgb(149, 149, 149);
+    margin-top: 1em;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+  .card-stats1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgb(184, 184, 184);
+  }
+  
+  .casino-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    perspective: 1000px;
+  }
+
+
+/* --------------------------CASINO CARDS ENDš */
+
+
+.part {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom:2em;
+}
+.part h3{
+    color: #FF4500;
+    font-family: Cinzel, sans-serif;
+    padding-top: 1em;
+}
+
+ /*----------- MODULA LOGS ------  */
+
+ .open-modal-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #FFD700, #FF4500);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.open-modal-btn:hover {
+    background: linear-gradient(90deg, #FF4500, #FFD700);
+
+}
+
+/* Modal logs */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Caurspīdīgs fons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay.hidden {
+    display: none; /* Paslēpts pēc noklusējuma */
+}
+
+.modal {
+    background: rgba(255, 255, 255, 0.1); /* Caurspīdīgs logs */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(1px); /* Miglains efekts */
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+ /*----------- MODULA LOGS ------  */
+
+/* kartinas */
+
+/* -----------------Casino MENU Cards */
+
+
+/* -----------------Casino MENU Cards */
+
+
+/* kartinas */
+
+.footer-class {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-class img{
+    width: 100%;
+}
+
+
+                                        /* BONUSE PAGE START */
+
+.bonuse-img {
+    display: flex;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 5em;
+}
+
+.pphero {
+    display: flex;
+    margin-top: 7em;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPrivacyPolicy {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.newspage {
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    gap: 20px;
+    padding: 2em 0;
+}
+
+.news a  {
+    text-decoration: none;
+}
+
+small {
+    color: azure;
+}
+
+.news h3 {
+    padding: .7em 0;
+}
+
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Responsīvi stili */
+@media (max-width: 700px) {
+
+    .vipcon {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1em;
+        justify-content: center;
+        margin: 1.5em;
+    }
+
+    .vip-bonuses {
+        width: 99%;
+    }
+
+    .page2 {
+        display: grid;
+        grid-template-columns:1fr;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-col {
+        position: absolute;
+        p {
+            color: antiquewhite;
+        }
+    }
+    .left-col {
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+
+    .hamburger {
+        display: flex; /* Parāda hamburger pogu */
+    }
+
+    .nav-links {
+        display: none; /* Paslēpj izvēlni pēc noklusējuma */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        width: calc(100% - 20px);
+        padding: 20px;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        display: flex; /* Parāda izvēlni ar "show" klasi */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a   {
+        display: inline-block;
+        padding: 16px 12px;
+    }
+    
+    .nav-links li a:hover {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .news {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        gap: 20px;
+        padding: 2em 0;
+    }
+   
+
+}
+
+
+/* -------------NAV BAR END HERE -------------- */
+
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 0.8s ease-in-out;
+}
