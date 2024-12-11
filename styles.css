@@ -1,44 +1,4 @@
-/* 
 
-Primary Colors:
-Gold: #FFD700 (RGB: 255, 215, 0)
-
-Hashtags:
-#GoldTheme #LuxuryLook #GoldenReels #GoldRGB2552150
-Black: #000000 (RGB: 0, 0, 0)
-
-Hashtags:
-#BlackElegance #DarkMode #LuxuryBlack #BlackRGB000
-Red: #FF4500 (RGB: 255, 69, 0)
-
-Hashtags:
-#VividRed #CasinoPassion #FieryRed #RedRGB255690
-Accent Colors:
-White: #FFFFFF (RGB: 255, 255, 255)
-
-Hashtags:
-#WhiteAccent #CleanDesign #BrightStyle #WhiteRGB255255255
-Dark Blue: #00008B (RGB: 0, 0, 139)
-
-Hashtags:
-#RoyalBlue #DeepBlueStyle #LuxuryBlue #BlueRGB0000139
-Shimmering Gradients (Gold to Red):
-Gradient 1: Gold to Red (linear-gradient(90deg, #FFD700 0%, #FF4500 100%))
-
-Hashtags:
-#GoldenRedGradient #ShimmerEffect #GradientRGBGoldRed
-Gradient 2: Gold to Black (linear-gradient(90deg, #FFD700 0%, #000000 100%))
-
-Hashtags:
-#GoldBlackGradient #RoyalEffect #GradientRGBGoldBlack
-Gradient 3: Dark Blue to Gold (linear-gradient(90deg, #00008B 0%, #FFD700 100%))
-
-Hashtags:
-#BlueGoldGradient #RichStyle #GradientRGBBlueGold
-
-
-
-*/
 
 
 
@@ -502,6 +462,7 @@ small {
 
     .vip-bonuses {
         width: 99%;
+        padding-top:4em;
     }
 
     .page2 {
@@ -510,6 +471,7 @@ small {
         position: relative;
         justify-content: center;
         align-items: center;
+        padding-top: 4em;
     }
     .right-col {
         position: absolute;
